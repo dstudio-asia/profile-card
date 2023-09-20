@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --color-popup: #2e25ad;
+  --color-muted: #404145;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-sm {
+  font-size: 14px;
+}
+.aspect-ratio-1 {
+  aspect-ratio: 1/1;
+}
+
+.o-fit-cover {
+  object-fit: cover;
+}
+
+.co-grey-700{
+    color: #b5b6ba;
+}
+/* PROFILE INTRO SECTION */
+
+/* images  */
+
+.profile-img {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+}
+.profile-img img {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+}
+.profile-img::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  background: #3ff9dc;
+  background: linear-gradient(
+    225deg,
+    #003912,
+    #1dbf73 37.55%,
+    #1dbf73 63.2%,
+    #d0e500
+  );
+  top: -8px;
+  left: -8px;
+}
+
+.profile-badge {
+  background: var(--color-popup);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  bottom: -12px;
+  z-index: 99;
+  right: 18px;
+}
+
+.profile-badge svg {
+  fill: #ffffff;
+  width: 25px;
+}
+
+/* profile info */
+
+.profile-info {
+}
+
+.profile-info .card-text {
+  color: var(--color-muted);
+}
+
+.profile-info .card-text:hover {
+  text-decoration: underline;
+}
+
+/* profile rating  */
+.profile-rating svg {
+  color: var(--color-muted);
+}
+
+/* profile description  */
+/* .profile-subheading{
+    margin-bottom: 25px;
+} */
+
+.icon-box-child-icon svg {
+  width: 16px;
+  fill: var(--color-popup);
+}
+
+.list-item-child:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.client-name {
+  color: var(--color-muted);
+}
+.client-group-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* skills card  */
+
+.skills-card li {
+  display: inline-block;
+  border-radius: 15px;
+  min-width: 40px;
+  text-align: center;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+  border: 1px solid #e4e5e7;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.social-presence-card li svg {
+  color: var(--color-muted);
+}
+.social-presence-card li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid var(--color-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
